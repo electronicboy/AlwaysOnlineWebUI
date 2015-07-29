@@ -1,0 +1,4 @@
+#Lets not bundle our Config file in there
+config.php
+#IDE Project Folder
+.idea

